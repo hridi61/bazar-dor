@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* রঙগুলো Figma-র স্ক্রিনশট দেখে আন্দাজ করা। Figma থেকে hex মিলিয়ে বদলে নিও। */
+@theme inline {
+  --font-sans: var(--font-hind), system-ui, sans-serif;
+  --color-page: #f1f5f0;
+  --color-card: #fbfdfb;
+  --color-line: #dde6dc;
+  --color-ink: #14221a;
+  --color-muted: #55655a;
+  --color-brand: #0b8a3e;
+  --color-brand-soft: #dcf0e2;
+  --color-up: #d32f2f;
+  --color-down: #15803d;
+  --color-flat: #5f6b63;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  width: max-content;
+  animation: marquee 70s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-track { animation: none; }
+  .marquee { overflow-x: auto; }
+}
