@@ -4,7 +4,7 @@
 
 **বাংলাদেশের নিত্যপ্রয়োজনীয় পণ্যের দাম এক নজরে**
 
-🌐 [Live Site](https://তোমার-সাইট.vercel.app) &nbsp;|&nbsp; 💻 [GitHub Repository](https://github.com/hridi61/bazar-dor)
+🌐 [Live Site](   https://bazar-dor-seven-rho.vercel.app) &nbsp;|&nbsp; 💻 [GitHub Repository](https://github.com/hridi61/bazar-dor)
 
 </div>
 
