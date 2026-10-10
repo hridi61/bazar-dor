@@ -57,7 +57,14 @@ export default function SignInForm() {
           disabled={loading}
           className="w-full rounded-lg bg-brand py-3 font-semibold text-white shadow-lg shadow-brand/30 hover:bg-brand/90 disabled:opacity-60"
         >
-          {loading ? "সাইন ইন হচ্ছে..." : "সাইন ইন"}
+          {loading ? (
+            <span className="flex items-center justify-center gap-2">
+              <span className="loading loading-spinner loading-sm" />
+              সাইন ইন হচ্ছে...
+            </span>
+          ) : (
+            "সাইন ইন"
+          )}
         </button>
       </form>
 

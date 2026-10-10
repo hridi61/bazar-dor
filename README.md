@@ -24,6 +24,7 @@
 | Database | MongoDB Atlas |
 | Notification | react-hot-toast |
 | Deployment | Vercel |
+| UI Component | DaisyUI |
 
 ## ✨ Key Features
 

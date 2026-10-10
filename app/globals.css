@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
 
 /* রঙগুলো Figma-র স্ক্রিনশট দেখে আন্দাজ করা। Figma থেকে hex মিলিয়ে বদলে নিও। */
 @theme inline {

@@ -58,7 +58,14 @@ export default function SignUpForm() {
           disabled={loading}
           className="w-full rounded-lg bg-brand py-3 font-semibold text-white shadow-lg shadow-brand/30 hover:bg-brand/90 disabled:opacity-60"
         >
-          {loading ? "অ্যাকাউন্ট তৈরি হচ্ছে..." : "অ্যাকাউন্ট তৈরি করুন"}
+          {loading ? (
+            <span className="flex items-center justify-center gap-2">
+              <span className="loading loading-spinner loading-sm" />
+              অ্যাকাউন্ট তৈরি হচ্ছে...
+            </span>
+         ) : (
+            "অ্যাকাউন্ট তৈরি করুন"
+         )}
         </button>
       </form>
 
